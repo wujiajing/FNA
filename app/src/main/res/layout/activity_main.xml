@@ -8,12 +8,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/fruit" />
-
+    <Spinner android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/spinner_fruits"/>
     <Button
         android:id="@+id/analyseBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/analyse" />
+
 
 
 </LinearLayout>
