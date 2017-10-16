@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FNA</string>
+        <string name="fruit">Fruit Type</string>
+        <string name="analyse">Analyse Fruit</string>
+</resources>
