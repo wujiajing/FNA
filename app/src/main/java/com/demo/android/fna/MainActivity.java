@@ -50,11 +50,12 @@ public class MainActivity extends Activity {
         public void onClick(View v) {
             //Toast.makeText(MainActivity.this,"Hello FNA APP",Toast.LENGTH_SHORT).show();
             //openOptionsDialog();
-//            Intent intent=new Intent();
-//            intent.setClass(MainActivity.this,AnalyseActivity.class);
-            Intent intent=new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("http://www.baidu.com"));
+            Intent intent=new Intent();
+           intent.setClass(MainActivity.this,AnalyseActivity.class);
             startActivity(intent);
+          /*  Intent intent=new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("tel:911"));
+            startActivity(intent);*/
         }
     };
     public void openOptionsDialog(){
