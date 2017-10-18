@@ -25,7 +25,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);                 //加载当前布局
         m_btn = (Button)findViewById(R.id.analyseBtn);         //获取按钮控件
         m_btn.setOnClickListener(analyseCalc);
-        Spinner s1=(Spinner)findViewById(R.id.spinner1);
+
+
+     /*   Spinner s1=(Spinner)findViewById(R.id.spinner1);
         ArrayAdapter<CharSequence>adapter = ArrayAdapter.createFromResource(
                 this,R.array.fruits,R.layout.fruits_item);
                 adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
@@ -41,7 +43,7 @@ public class MainActivity extends Activity {
                             public void onNothingSelected(AdapterView<?> parent) {
                                 Toast.makeText(MainActivity.this,"Spinner1:unselected",Toast.LENGTH_SHORT).show();
                             }
-                        });
+                        });*/
 
     }
     private Button.OnClickListener analyseCalc = new View.OnClickListener()             //按键监听
@@ -51,14 +53,14 @@ public class MainActivity extends Activity {
             //Toast.makeText(MainActivity.this,"Hello FNA APP",Toast.LENGTH_SHORT).show();
             //openOptionsDialog();
             Intent intent=new Intent();
-           intent.setClass(MainActivity.this,AnalyseActivity.class);
+           intent.setClass(MainActivity.this,Activity1.class);
             startActivity(intent);
           /*  Intent intent=new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse("tel:911"));
             startActivity(intent);*/
         }
     };
-    public void openOptionsDialog(){
+    /*public void openOptionsDialog(){
         new AlertDialog.Builder(this).setTitle("关于FNA Dialog").setTitle("FNA App").show();
     }
     public boolean onCreateOptionsMenu(Menu menu)               //创建菜单
@@ -90,5 +92,5 @@ public class MainActivity extends Activity {
         }
         flag = !flag;
         return super.onPrepareOptionsMenu(menu);
-    }
+    }*/
 }

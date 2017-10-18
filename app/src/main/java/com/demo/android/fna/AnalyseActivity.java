@@ -51,7 +51,6 @@ public class AnalyseActivity extends Activity {
             }
         });
                 mSwitcher.setCurrentText(String.valueOf(Counter));
-
         m_listview=(ListView)findViewById(R.id.list_view);
         m_adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,data);
         m_listview.setAdapter(m_adapter);
